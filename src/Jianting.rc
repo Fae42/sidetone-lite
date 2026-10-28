@@ -1,0 +1,31 @@
+#include <windows.h>
+#include "resource.h"
+
+IDI_APPICON ICON "Jianting.ico"
+IDR_MANIFEST RT_MANIFEST "Jianting.manifest"
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "Jianting"
+            VALUE "FileDescription", "轻量麦克风监听"
+            VALUE "FileVersion", "1.0.0"
+            VALUE "InternalName", "Jianting"
+            VALUE "OriginalFilename", "Jianting.exe"
+            VALUE "ProductName", "监听"
+            VALUE "ProductVersion", "1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0804, 1200
+    END
+END
