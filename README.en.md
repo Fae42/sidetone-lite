@@ -8,11 +8,11 @@ A lightweight, native, low-overhead microphone sidetone tool for Windows. Select
 
 ## Where it fits
 
-- **Gaming and team chat:** Hear whether you are speaking clearly over gunfire, keyboards, and teammates, without shouting to compensate.
-- **Streaming and recording:** Check your level and noise floor before going live, catching quiet input, clipping, or a wrong device before it ruins a take.
-- **Meetings and online classes:** Confirm the right microphone is working before you speak, with less “hello, can you hear me?”
-- **Voice-over, reading, and singing practice:** Hear breathing, rhythm, and level changes as they happen instead of waiting for playback.
-- **Multi-device desktops:** Quickly confirm whether the active input is a USB microphone, headset microphone, or virtual device.
+- **Gaming:** Hear yourself without shouting.
+- **Streaming:** Check your voice before going live.
+- **Meetings:** Less “can you hear me?”
+- **Voice practice:** Hear breathing, rhythm, and level in real time.
+- **Multiple devices:** Quickly confirm the right microphone.
 
 ## Features
 
