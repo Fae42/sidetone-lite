@@ -10,9 +10,7 @@ A lightweight, native, low-overhead microphone sidetone tool for Windows. Select
 
 - **Gaming:** Hear yourself without shouting.
 - **Streaming:** Check your voice before going live.
-- **Meetings:** Less “can you hear me?”
 - **Voice practice:** Hear breathing, rhythm, and level in real time.
-- **Multiple devices:** Quickly confirm the right microphone.
 
 ## Features
 
