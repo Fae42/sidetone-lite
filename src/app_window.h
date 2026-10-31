@@ -58,6 +58,7 @@ private:
     DeviceNotifier* notifier_ = nullptr;
     std::vector<InputDevice> devices_;
     std::wstring activeInputId_;
+    std::wstring rememberedInputId_;
     UINT dpi_ = 96;
     bool running_ = false;
     bool gateEnabled_ = false;

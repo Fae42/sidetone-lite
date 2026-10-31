@@ -1,5 +1,6 @@
 #include "app_window.h"
 #include "resource.h"
+#include "settings.h"
 
 #include <commctrl.h>
 #include <dwmapi.h>
@@ -43,6 +44,9 @@ struct DeviceChangeMessage {
     DWORD kind;
     std::wstring id;
 };
+
+using settings::LoadRememberedInputId;
+using settings::SaveRememberedInputId;
 
 }
 
@@ -393,6 +397,7 @@ void AppWindow::OnCreate() {
     } else {
         notifier->Release();
     }
+    rememberedInputId_ = LoadRememberedInputId();
     RefreshDevices();
     if (!notifier_) {
         SetStatus(L"无法监视音频设备变化，已禁用监听", 2);
@@ -457,6 +462,9 @@ void AppWindow::RefreshDevices() {
             preferred = devices_[oldIndex].id;
         }
     }
+    if (preferred.empty()) {
+        preferred = rememberedInputId_;
+    }
 
     std::wstring error;
     if (!engine_.ListInputs(devices_, error)) {
@@ -511,6 +519,8 @@ void AppWindow::ToggleListening() {
     engine_.SetNoiseGateEnabled(gateEnabled_);
     activeInputId_ = devices_[index].id;
     if (engine_.Start(activeInputId_, AudioEvent, this, error)) {
+        rememberedInputId_ = activeInputId_;
+        SaveRememberedInputId(rememberedInputId_);
         running_ = true;
         SetRunningUi(true);
         SetStatus(L"正在监听", 1);
