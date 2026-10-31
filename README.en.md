@@ -6,6 +6,14 @@ A lightweight, native, low-overhead microphone sidetone tool for Windows. Select
 
 ![Sidetone Lite main window](docs/images/window.png)
 
+## Where it fits
+
+- **Gaming and team chat:** Hear whether you are speaking clearly over gunfire, keyboards, and teammates, without shouting to compensate.
+- **Streaming and recording:** Check your level and noise floor before going live, catching quiet input, clipping, or a wrong device before it ruins a take.
+- **Meetings and online classes:** Confirm the right microphone is working before you speak, with less “hello, can you hear me?”
+- **Voice-over, reading, and singing practice:** Hear breathing, rhythm, and level changes as they happen instead of waiting for playback.
+- **Multi-device desktops:** Quickly confirm whether the active input is a USB microphone, headset microphone, or virtual device.
+
 ## Features
 
 - Selectable input device; output follows the Windows default device
